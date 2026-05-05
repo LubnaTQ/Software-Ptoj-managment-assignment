@@ -1,21 +1,21 @@
 public class Calculator {
 
-    // Method for subtraction
-    public static int subtract(int a, int b) {
-        return a - b;
+    // Method for multiplication
+    public static int multiply(int a, int b) {
+        return a * b;
     }
 
-    // Method for equal to comparison
-    public static boolean isEqual(int a, int b) {
-        return a == b;
+    // Method for logical AND (comparison)
+    public static boolean logicalAnd(int a, int b) {
+        return (a > 0 && b > 0);
     }
 
     public static void main(String[] args) {
 
-        int difference = subtract(20, 7);
-        System.out.println("Subtraction: " + difference);
+        int product = multiply(6, 7);
+        System.out.println("Multiplication: " + product);
 
-        boolean result = isEqual(15, 15);
-        System.out.println("Equal To: " + result);
+        boolean result = logicalAnd(5, 3);
+        System.out.println("Logical AND: " + result);
     }
 }
